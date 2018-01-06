@@ -9,10 +9,10 @@ import java.util.ResourceBundle;
 
 public class MainController  {
     public AnchorPane description_layout;
-
+    private int user_ID;
 
     public void GoToCreateNewFormButton(ActionEvent actionEvent) {
-        Main.goToCreateForm();
+        Main.goToCreateForm(user_ID);
     }
 
     public void GoToLoginScene(ActionEvent actionEvent) {
@@ -27,4 +27,7 @@ public class MainController  {
         description_layout.setVisible(true);
     }
 
+    public void setUser_ID(int user_ID) {
+        this.user_ID = user_ID;
+    }
 }

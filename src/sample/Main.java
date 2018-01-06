@@ -59,14 +59,16 @@ public class Main extends Application {
         primaryStage.show();
     }
 
-    public static void goToMain() {
+    public static void goToMain(int user_ID) {
+        mainController.setUser_ID(user_ID);
         primaryStage.setTitle("Panel Główny");
         primaryStage.setScene(mainScene);
         primaryStage.show();
         mainController.hideDescription();
     }
 
-    public static void goToCreateForm() {
+    public static void goToCreateForm(int user_ID) {
+        createNewFormController.setUser_ID(user_ID);
         primaryStage.setTitle("Utwórz szkode");
         primaryStage.setScene(createFormScene);
         primaryStage.show();
@@ -76,4 +78,5 @@ public class Main extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+
 }

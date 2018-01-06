@@ -1,9 +1,11 @@
 package sample.controllers;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import sample.DatabaseHelper;
 import sample.Main;
 
 import java.sql.*;
@@ -34,19 +36,12 @@ public class RegisterController {
         else
         {
 
-            Connection connection =null;
+            Connection connection = DatabaseHelper.getConnection();
             PreparedStatement ps =null;
             ResultSet rs = null;
 
-            try {
-                Class.forName("org.sqlite.JDBC");
-                connection= DriverManager.getConnection("jdbc:sqlite:@../../assets/database.sqlite");
-
-
                 ps = connection.prepareStatement( "INSERT INTO User"
                         + "(name, surname, password, login) VALUES"+ "(?,?,?,?)");
-
-
 
                 ps.setString(1, register_name_input_text_view.getText());
                 ps.setString(2, register_surname_input_text_view.getText());
@@ -59,14 +54,16 @@ public class RegisterController {
                 register_name_input_text_view.clear();
                 register_login_input_text_view.clear();
                 register_error_label.setText("");
+
         // execute insert SQL stetement
                 ps .executeUpdate();
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Zarejestrowano");
+            alert.setHeaderText(null);
+            alert.setContentText("Gratulacje! Teraz możesz się zalogować do systemu");
 
+            alert.showAndWait();
                 Main.goToLogin();
-
-            } catch (ClassNotFoundException e) {
-                e.printStackTrace();
-            }
         }
     }
 }
