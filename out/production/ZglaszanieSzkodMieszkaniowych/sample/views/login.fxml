@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" hgap="10.0" prefHeight="500.0" prefWidth="600.0" vgap="10.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.controllers.LoginController">
+  <children>
+    <AnchorPane prefHeight="500.0" prefWidth="401.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <children>
+        <TextField fx:id="login_input_text_view" layoutX="217.0" layoutY="227.0" prefHeight="47.0" prefWidth="252.0" promptText="login" />
+        <PasswordField fx:id="password_input_text_view" alignment="CENTER_LEFT" layoutX="217.0" layoutY="301.0" prefHeight="47.0" prefWidth="252.0" promptText="password" />
+        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="20.0" layoutX="180.0" layoutY="28.0" prefHeight="116.0" prefWidth="241.0" text="Logowanie">
+          <font>
+            <Font name="Calibri Bold" size="32.0" />
+          </font>
+        </Label>
+        <ImageView fitHeight="65.25" fitWidth="65.25" layoutX="101.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../../../assets/login_icon.png" />
+          </image>
+        </ImageView>
+        <ImageView fitHeight="44.25" fitWidth="59.0" layoutX="112.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../../../assets/password_icon.png" />
+          </image>
+        </ImageView>
+        <Button fx:id="login_button" layoutX="331.0" layoutY="383.0" mnemonicParsing="false" onAction="#Login" prefWidth="138.0" text="Zaloguj" />
+        <Button fx:id="register_button" layoutX="176.0" layoutY="383.0" mnemonicParsing="false" onAction="#moveToRegisterScene" prefWidth="138.0" text="Zarejestruj" />
+        <Label fx:id="login_error_label" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="20.0" layoutX="54.0" layoutY="430.0" prefHeight="56.0" prefWidth="493.0" text="" textFill="#cc0000">
+          <font>
+            <Font name="Calibri" size="25.0" />
+          </font>
+        </Label>
+      </children>
+    </AnchorPane>
+  </children>
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+</GridPane>

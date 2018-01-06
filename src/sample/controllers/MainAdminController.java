@@ -52,13 +52,15 @@ public class MainAdminController {
 
     public void AcceptChanges(ActionEvent actionEvent) {
 
+        currentModel.setStatus(status_combo_box.getSelectionModel().getSelectedItem().toString());
+
         if(currentModel==null || currentModel.getStatus().equals(PRZETWARZANIE.toString()))
             return;
 
-        currentModel.setStatus(status_combo_box.getSelectionModel().getSelectedItem().toString());
+
         System.out.println(status_combo_box.getSelectionModel().getSelectedItem().toString());
         DatabaseHelper.updateFormStatus(currentModel);
-       // updateList();
+     //   updateList();
 
     }
 
