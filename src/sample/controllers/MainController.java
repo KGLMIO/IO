@@ -13,16 +13,13 @@ import javafx.scene.paint.Color;
 import sample.DatabaseHelper;
 import sample.Main;
 import sample.Models.FormModel;
+import sample.Models.User;
 import sample.controllers.CreateNewFormController.FORM_STATUS;
 
-import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.ResourceBundle;
 
 import static sample.controllers.CreateNewFormController.FORM_STATUS.PRZETWARZANIE;
 
@@ -33,18 +30,18 @@ public class MainController  {
     public Label statusLabel;
     public Label nazwaLabel;
     public Label opisLabel;
+    public Label helloLabel;
 
-    private int user_ID;
-
-
+    private User user;
     private FormModel currentModel;
     private ObservableList<FormModel> form_list;
 
     public void GoToCreateNewFormButton(ActionEvent actionEvent) {
-        Main.goToCreateForm(user_ID);
+        Main.goToCreateForm(user);
     }
 
     public void GoToLoginScene(ActionEvent actionEvent) {
+        hideDescription();
         Main.goToLogin();
     }
 
@@ -56,15 +53,16 @@ public class MainController  {
         description_layout.setVisible(true);
     }
 
-    public void setUser_ID(int user_ID) {
-        this.user_ID = user_ID;
+    public void setUser(User user) {
+        this.user = user;
+        helloLabel.setText("Witaj "+user.getName());
     }
 
 
 
     public void updateList(){
-            initList();
-     form_list = FXCollections.observableArrayList();
+        initList();
+        form_list = FXCollections.observableArrayList();
 
         Connection connection =null;
         PreparedStatement ps =null;
@@ -75,7 +73,7 @@ public class MainController  {
             connection= DatabaseHelper.getConnection();
 
             ps = connection.prepareStatement("SELECT * FROM form WHERE userID = ? ");
-            ps.setInt(1,user_ID);
+            ps.setInt(1, user.getId());
 
             rs = ps.executeQuery();
 
@@ -88,6 +86,7 @@ public class MainController  {
             }
 
     list_view.setItems(form_list);
+
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -114,18 +113,16 @@ public class MainController  {
             @Override
             public void changed(ObservableValue<? extends FormModel> observable, FormModel oldValue, FormModel newValue) {
                 // Your action here
-                currentModel =newValue;
+                currentModel = newValue;
                 insertValuesIntoFields();
             }
         });
-
     }
 
     private void insertValuesIntoFields() {
         
         if(!description_layout.isVisible())
             description_layout.setVisible(true);
-
 
        if(currentModel.getStatus().equals(FORM_STATUS.PRZETWARZANIE.toString()))
         statusLabel.setTextFill(Color.web("#6e6f72"));
@@ -139,40 +136,20 @@ public class MainController  {
         statusLabel.setText(currentModel.getStatus());
         opisLabel.setText(currentModel.getDescripton());
         nazwaLabel.setText(currentModel.getName());
-
-
     }
 
     public void modifyForm(ActionEvent actionEvent) {
-        Main.goToCreateForm(user_ID);
+        Main.goToCreateForm(user);
         Main.EditForm(currentModel);
     }
 
     public void reneawForm(ActionEvent actionEvent)  {
 
-
         if(currentModel.getStatus().equals(PRZETWARZANIE.toString()))
             return;
 
-
         currentModel.setStatus(FORM_STATUS.PRZETWARZANIE.toString());
+        DatabaseHelper.updateFormStatus(currentModel);
         insertValuesIntoFields();
-        Connection connection =null;
-        PreparedStatement ps =null;
-
-        try {
-            connection= DatabaseHelper.getConnection();
-
-            ps = connection.prepareStatement("UPDATE form SET status = ? WHERE id = ? ");
-
-            ps.setString(1, currentModel.getStatus());
-            ps.setInt(2, currentModel.getId());
-            ps.executeUpdate();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-
-
     }
 }

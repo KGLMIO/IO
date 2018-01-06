@@ -1,8 +1,14 @@
 package sample;
 
+import sample.Models.FormModel;
+import sample.controllers.CreateNewFormController;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
+
+import static sample.controllers.CreateNewFormController.FORM_STATUS.PRZETWARZANIE;
 
 public class DatabaseHelper {
 
@@ -30,4 +36,28 @@ public class DatabaseHelper {
 
         return instance;
     }
+
+
+
+    public static void updateFormStatus(FormModel formModel){
+
+
+
+        Connection connection =null;
+        PreparedStatement ps =null;
+
+        try {
+            connection= DatabaseHelper.getConnection();
+
+            ps = connection.prepareStatement("UPDATE form SET status = ? WHERE id = ? ");
+
+            ps.setString(1, formModel.getStatus());
+            ps.setInt(2, formModel.getId());
+            ps.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+
 }

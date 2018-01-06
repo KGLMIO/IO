@@ -41,13 +41,13 @@ public class RegisterController {
             ResultSet rs = null;
 
                 ps = connection.prepareStatement( "INSERT INTO User"
-                        + "(name, surname, password, login) VALUES"+ "(?,?,?,?)");
+                        + "(name, surname, password, login,admin) VALUES"+ "(?,?,?,?,?)");
 
                 ps.setString(1, register_name_input_text_view.getText());
                 ps.setString(2, register_surname_input_text_view.getText());
                 ps.setString(3, register_password_input_text_view.getText());
                 ps.setString(4, register_login_input_text_view.getText());
-
+                ps.setBoolean(5, false);
 
                 register_surname_input_text_view.clear();
                 register_password_input_text_view.clear();

@@ -5,10 +5,10 @@ import javafx.scene.control.*;
 import sample.DatabaseHelper;
 import sample.Main;
 import sample.Models.FormModel;
+import sample.Models.User;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class CreateNewFormController {
@@ -29,10 +29,10 @@ public class CreateNewFormController {
     public Label error_message;
     public TextField detriment_name;
 
-    private int user_ID;
+    private User user;
 
-    public void setUser_ID(int user_ID) {
-        this.user_ID = user_ID;
+    public void setUser(User user) {
+        this.user = user;
 
     }
 
@@ -46,7 +46,7 @@ public class CreateNewFormController {
 
 
     public void GoToMainPage(ActionEvent actionEvent) {
-        Main.goToMain(user_ID);
+        Main.goToMain(user);
         edit=false;
         currentModel=null;
         save_form_button.setText("Utwórz szkode");
@@ -76,7 +76,7 @@ public class CreateNewFormController {
             ps.setString(1, detriment_name.getText());
             ps.setString(2, detriment_description.getText());
             ps.setString(3, FORM_STATUS.PRZETWARZANIE.toString());
-            ps.setInt(4, user_ID);
+            ps.setInt(4, user.getId());
             alert.setTitle("Pomyslnie dodano");
             alert.setHeaderText(null);
             alert.setContentText("Zgłoszenie zostało przyjęte!");
@@ -89,7 +89,7 @@ public class CreateNewFormController {
 
 
         alert.showAndWait();
-        Main.goToMain(user_ID);
+        Main.goToMain(user);
 
 
     }

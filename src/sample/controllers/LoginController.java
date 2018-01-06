@@ -8,6 +8,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import sample.DatabaseHelper;
 import sample.Main;
+import sample.Models.User;
 
 import javax.xml.crypto.Data;
 import java.sql.*;
@@ -41,7 +42,15 @@ public class LoginController {
 
             if(rs.next()){
                 password_input_text_view.clear();
-                Main.goToMain(rs.getInt("id"));
+
+
+                User user = new User(rs.getString("name"),rs.getString("surname"),
+                        rs.getString("login"),rs.getString("password"), rs.getInt("id"), rs.getBoolean("admin"));
+
+                if(user.isAdmin())
+                    Main.goToMainAdmin(user);
+                else
+                Main.goToMain(user);
             }
             else{
                 login_error_label.setText("Zły login i/lub hasło");

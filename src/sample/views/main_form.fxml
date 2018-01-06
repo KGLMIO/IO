@@ -14,7 +14,7 @@
   <children>
     <AnchorPane prefHeight="536.0" prefWidth="671.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
       <children>
-        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="20.0" layoutX="166.0" layoutY="-24.0" prefHeight="116.0" prefWidth="241.0" text="Witaj">
+        <Label fx:id="helloLabel" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="20.0" layoutX="166.0" layoutY="-24.0" prefHeight="116.0" prefWidth="241.0" text="Witaj">
           <font>
             <Font name="Calibri Bold" size="32.0" />
           </font>
