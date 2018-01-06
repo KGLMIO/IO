@@ -163,7 +163,7 @@ public class MainAdminController {
         nazwaLabel.setText(currentModel.getName());
 
         imieLabel.setText(currentModel.getUser().getName());
-        nazwiskoLabel.setText(currentModel.getUser().getName());
+        nazwiskoLabel.setText(currentModel.getUser().getSurname());
         loginLabel.setText(currentModel.getUser().getLogin());
         hasloLabel.setText(currentModel.getUser().getPassword());
 
