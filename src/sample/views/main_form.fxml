@@ -26,21 +26,21 @@
           </font>
         </Label>
         <Button fx:id="logout_button" layoutX="17.0" layoutY="477.0" mnemonicParsing="false" onAction="#GoToLoginScene" prefWidth="138.0" text="Wyloguj" />
-        <ListView layoutX="24.0" layoutY="116.0" prefHeight="282.0" prefWidth="206.0" />
+        <ListView fx:id="list_view" layoutX="24.0" layoutY="116.0" prefHeight="282.0" prefWidth="206.0" />
         <AnchorPane fx:id="description_layout" disable="false" layoutX="254.0" layoutY="116.0" prefHeight="350.0" prefWidth="369.0" visible="true">
           <children>
-            <Button layoutX="200.0" layoutY="287.0" mnemonicParsing="false" prefWidth="155.0" text="Ponów prośbe" />
-            <Button layoutX="4.0" layoutY="287.0" mnemonicParsing="false" prefWidth="126.00009999999747" text="Modyfikuj" />
+            <Button id="repeat_queston_button" fx:id="reneaw_queston_button" layoutX="200.0" layoutY="287.0" mnemonicParsing="false" onAction="#reneawForm" prefWidth="155.0" text="Ponów prośbe" />
+            <Button fx:id="modifyForm" layoutX="4.0" layoutY="287.0" mnemonicParsing="false" onAction="#modifyForm" prefWidth="126.00009999999747" text="Modyfikuj" />
             <Label font="$x1" layoutX="27.0" layoutY="86.0" prefHeight="32.0" prefWidth="103.0" text="Opis" />
             <Label font="$x1" layoutX="14.0" layoutY="229.0" prefHeight="32.0" prefWidth="103.0" text="Status" />
             <Label font="$x1" layoutX="27.0" layoutY="14.0" prefHeight="32.0" prefWidth="80.0" text="Nazwa" />
-            <Label fx:id="statusLabel" font="$x1" layoutX="193.0" layoutY="229.0" prefHeight="32.0" prefWidth="149.0" text="statusLabel" />
-            <Label id="statusLabel" fx:id="opisLabel" alignment="TOP_LEFT" layoutX="26.0" layoutY="118.0" prefHeight="103.0" prefWidth="283.0" text="opisLabel">
+            <Label fx:id="statusLabel" font="$x1" layoutX="117.0" layoutY="229.0" prefHeight="32.0" prefWidth="225.0" text="statusLabel" />
+            <Label fx:id="opisLabel" alignment="TOP_LEFT" layoutX="26.0" layoutY="118.0" prefHeight="103.0" prefWidth="283.0" text="opisLabel">
               <font>
                 <Font size="16.0" />
               </font>
             </Label>
-            <Label id="statusLabel" alignment="CENTER" layoutX="26.0" layoutY="45.0" prefHeight="41.0" prefWidth="283.0" text="nazwaLabel">
+            <Label fx:id="nazwaLabel" alignment="CENTER" layoutX="26.0" layoutY="45.0" prefHeight="41.0" prefWidth="283.0" text="nazwaLabel">
               <font>
                 <Font size="18.0" />
               </font>

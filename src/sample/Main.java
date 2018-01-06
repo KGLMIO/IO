@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import sample.Models.FormModel;
 import sample.controllers.CreateNewFormController;
 import sample.controllers.MainController;
 
@@ -23,23 +24,22 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
 
         this.primaryStage=primaryStage;
-        FXMLLoader loginLoader = new FXMLLoader(getClass().getResource("login.fxml"));
+        FXMLLoader loginLoader = new FXMLLoader(getClass().getResource("views/login.fxml"));
         Parent login_scene_layout = loginLoader.load();
         loginScene = new Scene(login_scene_layout,600,600);
 
 
-        Parent register_scene_layout = FXMLLoader.load(getClass().getResource("sign_up.fxml"));
+        Parent register_scene_layout = FXMLLoader.load(getClass().getResource("views/sign_up.fxml"));
         registerScene = new Scene(register_scene_layout,600,600);
 
 
-        FXMLLoader loaderMain = new FXMLLoader(getClass().getResource("main_form.fxml"));
+        FXMLLoader loaderMain = new FXMLLoader(getClass().getResource("views/main_form.fxml"));
         Parent main_screen_layout = loaderMain.load();
         mainController = loaderMain.getController();
         mainScene = new Scene(main_screen_layout,670,600);
 
 
-
-        FXMLLoader loaderCreateFormLoader = new FXMLLoader(getClass().getResource("create_new_form.fxml"));
+        FXMLLoader loaderCreateFormLoader = new FXMLLoader(getClass().getResource("views/create_new_form.fxml"));
         Parent create_form_layout = loaderCreateFormLoader.load();
         createNewFormController = loaderCreateFormLoader.getController();
         createFormScene = new Scene(create_form_layout,600,600);
@@ -54,17 +54,21 @@ public class Main extends Application {
     }
 
     public static void goToLogin() {
+
         primaryStage.setTitle("Logowanie");
         primaryStage.setScene(loginScene);
         primaryStage.show();
     }
 
     public static void goToMain(int user_ID) {
-        mainController.setUser_ID(user_ID);
+
+
         primaryStage.setTitle("Panel Główny");
         primaryStage.setScene(mainScene);
         primaryStage.show();
         mainController.hideDescription();
+        mainController.setUser_ID(user_ID);
+        mainController.updateList();
     }
 
     public static void goToCreateForm(int user_ID) {
@@ -79,4 +83,7 @@ public class Main extends Application {
         launch(args);
     }
 
+    public static void EditForm(FormModel currentModel) {
+        createNewFormController.setEditModel(currentModel);
+    }
 }
