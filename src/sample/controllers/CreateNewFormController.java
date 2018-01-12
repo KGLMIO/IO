@@ -13,9 +13,6 @@ import java.sql.SQLException;
 
 public class CreateNewFormController {
 
-
-    public Button save_form_button;
-
     public enum FORM_STATUS {
         PRZETWARZANIE,ODMOWA,AKCEPTACJA,KONTAKT
     };
@@ -25,6 +22,8 @@ public class CreateNewFormController {
     private FormModel currentModel;
 
 
+    public Button save_form_button;
+    public TextField detriment_cost;
     public TextArea detriment_description;
     public Label error_message;
     public TextField detriment_name;
@@ -58,12 +57,15 @@ public class CreateNewFormController {
         Connection connection = DatabaseHelper.getConnection();
         PreparedStatement ps =null;
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
+
+
         if(edit) {
             ps = connection.prepareStatement("UPDATE form SET name = ? , description = ?  WHERE id = ? ");
 
             ps.setString(1, detriment_name.getText());
             ps.setString(2, detriment_description.getText());
             ps.setInt(3,currentModel.getId());
+
             alert.setTitle("");
             alert.setHeaderText(null);
             alert.setContentText("Pomyslnie zmodyfikowano");
@@ -71,12 +73,14 @@ public class CreateNewFormController {
         else
         {
             ps = connection.prepareStatement("INSERT INTO form"
-                    + "(name, description, status, userID) VALUES" + "(?,?,?,?)");
+                    + "(name, description, status, userID, amount) VALUES" + "(?,?,?,?,?)");
 
             ps.setString(1, detriment_name.getText());
             ps.setString(2, detriment_description.getText());
             ps.setString(3, FORM_STATUS.PRZETWARZANIE.toString());
             ps.setInt(4, user.getId());
+            ps.setInt(5,Integer.parseInt(detriment_cost.getText()));
+
             alert.setTitle("Pomyslnie dodano");
             alert.setHeaderText(null);
             alert.setContentText("Zgłoszenie zostało przyjęte!");
@@ -84,9 +88,6 @@ public class CreateNewFormController {
         ps .executeUpdate();
 
         clearFields();
-
-
-
 
         alert.showAndWait();
         Main.goToMain(user);
@@ -97,6 +98,7 @@ public class CreateNewFormController {
     private void clearFields(){
         detriment_description.clear();
         detriment_name.clear();
+        detriment_cost.clear();
     }
 
 
