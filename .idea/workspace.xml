@@ -1,29 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/Models/FormModel.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/Models/User.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/CreateNewFormController$FORM_STATUS.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/MainAdminController$1.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/MainAdminController$2.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/MainAdminController.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/MainController$1.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/MainController$2.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/views/create_new_form.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/views/login.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/views/main_admin_form.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/views/main_form.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/views/sign_up.fxml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/assets/database.sqlite" afterPath="$PROJECT_DIR$/assets/database.sqlite" />
-      <change beforePath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/DatabaseHelper.class" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/DatabaseHelper.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/Main.class" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/Main.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/CreateNewFormController.class" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/CreateNewFormController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/LoginController.class" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/LoginController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/MainController.class" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/MainController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/RegisterController.class" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/RegisterController.class" />
-      <change beforePath="$PROJECT_DIR$/src/sample/controllers/MainAdminController.java" afterPath="$PROJECT_DIR$/src/sample/controllers/MainAdminController.java" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Zmiana bazdy danych">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sample/controllers/InsuranceNrController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sample/views/insurance_nr.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/database.sqlite" afterPath="$PROJECT_DIR$/assets/database.sqlite" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/DatabaseHelper.class" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/DatabaseHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/Main.class" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/Models/FormModel.class" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/Models/FormModel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/Models/User.class" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/Models/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/CreateNewFormController$FORM_STATUS.class" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/CreateNewFormController$FORM_STATUS.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/CreateNewFormController.class" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/CreateNewFormController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/LoginController.class" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/LoginController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/MainAdminController$1.class" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/MainAdminController$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/MainAdminController$2.class" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/MainAdminController$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/MainAdminController.class" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/MainAdminController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/MainController$1.class" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/MainController$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/MainController$2.class" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/MainController$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/MainController.class" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/MainController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/RegisterController.class" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/controllers/RegisterController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZglaszanieSzkodMieszkaniowych.iml" afterPath="$PROJECT_DIR$/ZglaszanieSzkodMieszkaniowych.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/views/create_new_form.fxml" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/views/create_new_form.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/views/main_admin_form.fxml" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/views/main_admin_form.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/views/main_form.fxml" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/views/main_form.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/views/sign_up.fxml" afterPath="$PROJECT_DIR$/out/production/ZglaszanieSzkodMieszkaniowych/sample/views/sign_up.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/DatabaseHelper.java" afterPath="$PROJECT_DIR$/src/sample/DatabaseHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/Main.java" afterPath="$PROJECT_DIR$/src/sample/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/Models/FormModel.java" afterPath="$PROJECT_DIR$/src/sample/Models/FormModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/Models/User.java" afterPath="$PROJECT_DIR$/src/sample/Models/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/controllers/LoginController.java" afterPath="$PROJECT_DIR$/src/sample/controllers/LoginController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/controllers/MainAdminController.java" afterPath="$PROJECT_DIR$/src/sample/controllers/MainAdminController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/controllers/MainController.java" afterPath="$PROJECT_DIR$/src/sample/controllers/MainController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/controllers/RegisterController.java" afterPath="$PROJECT_DIR$/src/sample/controllers/RegisterController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/views/create_new_form.fxml" afterPath="$PROJECT_DIR$/src/sample/views/create_new_form.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/views/main_admin_form.fxml" afterPath="$PROJECT_DIR$/src/sample/views/main_admin_form.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/views/main_form.fxml" afterPath="$PROJECT_DIR$/src/sample/views/main_form.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/views/sign_up.fxml" afterPath="$PROJECT_DIR$/src/sample/views/sign_up.fxml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,12 +95,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="Stage.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/javafx.graphics/javafx/stage/Stage.java">
+      <file leaf-file-name="CreateNewFormController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sample/controllers/CreateNewFormController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="267" column="0" lean-forward="false" selection-start-line="267" selection-start-column="0" selection-end-line="267" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="21">
+              <caret line="74" column="63" lean-forward="false" selection-start-line="74" selection-start-column="63" selection-end-line="75" selection-end-column="87" />
+              <folding>
+                <marker date="1515723101765" expanded="true" signature="1568:1624" ph="UPDATE form " />
+                <marker date="1515723101765" expanded="true" signature="2006:2113" ph="INSERT INTO form... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,43 +111,64 @@
       <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/controllers/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1496">
-              <caret line="115" column="35" lean-forward="false" selection-start-line="115" selection-start-column="35" selection-end-line="115" selection-end-column="35" />
+            <state relative-caret-position="2310">
+              <caret line="137" column="56" lean-forward="false" selection-start-line="137" selection-start-column="56" selection-end-line="137" selection-end-column="56" />
               <folding>
-                <marker date="1515264823750" expanded="true" signature="1978:2013" ph="SELECT * FRO... form" />
+                <marker date="1515725464584" expanded="true" signature="2008:2043" ph="SELECT * FRO... form" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainAdminController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main_form.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/views/main_form.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1071">
+              <caret line="51" column="38" lean-forward="false" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
+              <folding>
+                <marker date="1515722402913" expanded="true" signature="3631:3650" ph="..." />
+              </folding>
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainAdminController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/controllers/MainAdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+            <state relative-caret-position="882">
+              <caret line="62" column="26" lean-forward="false" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
               <folding>
-                <marker date="1515265639319" expanded="true" signature="2395:2429" ph="SELECT * FRO... User" />
-                <marker date="1515265639319" expanded="true" signature="2829:2864" ph="SELECT * FRO... form" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1867#1868#0" expanded="true" />
+                <element signature="e#1919#1920#0" expanded="true" />
+                <marker date="1515725638853" expanded="true" signature="2285:2319" ph="SELECT * FRO... User" />
+                <marker date="1515725638853" expanded="true" signature="2855:2890" ph="SELECT * FRO... form" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <file leaf-file-name="DatabaseHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/DatabaseHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="1008">
+              <caret line="56" column="31" lean-forward="false" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1515725464605" expanded="true" signature="1276:1327" ph="UPDATE form " />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_admin_form.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/views/main_admin_form.fxml">
+      <file leaf-file-name="create_new_form.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/views/create_new_form.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="777">
+              <caret line="37" column="30" lean-forward="false" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -139,14 +177,68 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="main_admin_form.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/views/main_admin_form.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="24" column="136" lean-forward="false" selection-start-line="24" selection-start-column="136" selection-end-line="24" selection-end-column="136" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegisterController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/controllers/RegisterController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1302">
+              <caret line="70" column="39" lean-forward="false" selection-start-line="70" selection-start-column="39" selection-end-line="70" selection-end-column="39" />
+              <folding>
+                <marker date="1515717072550" expanded="true" signature="1686:1840" ph="INSERT INTO User... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1911">
+              <caret line="101" column="46" lean-forward="false" selection-start-line="101" selection-start-column="46" selection-end-line="101" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/controllers/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+              <folding>
+                <marker date="1515711349397" expanded="true" signature="1135:1186" ph="SELECT * FRO... User" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ade</find>
+      <find>kwo</find>
+    </findStrings>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -171,20 +263,32 @@
         <option value="$PROJECT_DIR$/src/sample/create_new_form.fxml" />
         <option value="$PROJECT_DIR$/src/sample/login.fxml" />
         <option value="$PROJECT_DIR$/src/sample/sign_up.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/DatabaseHelper.java" />
-        <option value="$PROJECT_DIR$/src/sample/controllers/RegisterController.java" />
-        <option value="$PROJECT_DIR$/src/sample/controllers/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/sample/Models/FormModel.java" />
         <option value="$PROJECT_DIR$/src/sample/views/main_form.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/controllers/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/sample/Models/User.java" />
+        <option value="$PROJECT_DIR$/src/sample/views/main_admin_form.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/views/sign_up.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/controllers/RegisterController.java" />
+        <option value="$PROJECT_DIR$/src/sample/views/insurance_nr.fxml" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/sample/controllers/MainController.java" />
+        <option value="$PROJECT_DIR$/src/sample/controllers/InsuranceNrController.java" />
         <option value="$PROJECT_DIR$/src/sample/controllers/CreateNewFormController.java" />
+        <option value="$PROJECT_DIR$/src/sample/Models/FormModel.java" />
+        <option value="$PROJECT_DIR$/src/sample/DatabaseHelper.java" />
+        <option value="$PROJECT_DIR$/src/sample/controllers/MainController.java" />
         <option value="$PROJECT_DIR$/src/sample/controllers/MainAdminController.java" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -216,6 +320,8 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -270,8 +376,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -289,7 +393,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -316,15 +420,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -345,6 +441,14 @@
       <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -380,6 +484,12 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -413,12 +523,6 @@
       <envs />
       <properties />
       <listeners />
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
@@ -455,6 +559,8 @@
       <workItem from="1515263742958" duration="193000" />
       <workItem from="1515264827559" duration="386000" />
       <workItem from="1515265263528" duration="432000" />
+      <workItem from="1515699490473" duration="21944000" />
+      <workItem from="1515739602561" duration="77000" />
     </task>
     <task id="LOCAL-00001" summary="Create UML folder">
       <created>1515239756826</created>
@@ -477,29 +583,35 @@
       <option name="project" value="LOCAL" />
       <updated>1515263886642</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Dostosowanie programu do założeń zrobionych diagramów uml">
+      <created>1515739482001</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1515739482001</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27392000" />
+    <option name="totallyTimeSpent" value="49413000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32971016" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970226" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2204126" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21981777" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32801822" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20948827" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21589689" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -514,6 +626,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -557,6 +670,42 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -566,7 +715,8 @@
     <MESSAGE value="Create UML folder" />
     <MESSAGE value="Przeniesienie wszystkich modeli do folderów" />
     <MESSAGE value="Zmiana bazdy danych" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zmiana bazdy danych" />
+    <MESSAGE value="Dostosowanie programu do założeń zrobionych diagramów uml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dostosowanie programu do założeń zrobionych diagramów uml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -579,40 +729,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sample/controllers/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="34" column="7" lean-forward="false" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-          <folding>
-            <marker date="1515264823750" expanded="true" signature="1978:2013" ph="SELECT * FRO... form" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Models/FormModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1525">
-          <caret line="67" column="38" lean-forward="false" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/javafx.graphics/javafx/stage/Stage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6675">
-          <caret line="267" column="0" lean-forward="false" selection-start-line="267" selection-start-column="0" selection-end-line="267" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/views/create_new_form.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -629,7 +745,8 @@
         <state relative-caret-position="475">
           <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <marker date="1515725464605" expanded="true" signature="1276:1327" ph="UPDATE form " />
           </folding>
         </state>
       </provider>
@@ -650,7 +767,7 @@
         <state relative-caret-position="475">
           <caret line="29" column="6" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="44" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <marker date="1515711349397" expanded="true" signature="1135:1186" ph="SELECT * FRO... User" />
           </folding>
         </state>
       </provider>
@@ -659,7 +776,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="21" column="154" lean-forward="false" selection-start-line="21" selection-start-column="154" selection-end-line="21" selection-end-column="154" />
-          <folding />
+          <folding>
+            <marker date="1515722402913" expanded="true" signature="3631:3650" ph="..." />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
@@ -671,7 +790,7 @@
         <state relative-caret-position="850">
           <caret line="34" column="7" lean-forward="false" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
           <folding>
-            <marker date="1515264823750" expanded="true" signature="1978:2013" ph="SELECT * FRO... form" />
+            <marker date="1515725464584" expanded="true" signature="2008:2043" ph="SELECT * FRO... form" />
           </folding>
         </state>
       </provider>
@@ -689,7 +808,8 @@
         <state relative-caret-position="575">
           <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <marker date="1515723101765" expanded="true" signature="1568:1624" ph="UPDATE form " />
+            <marker date="1515723101765" expanded="true" signature="2006:2113" ph="INSERT INTO form... " />
           </folding>
         </state>
       </provider>
@@ -702,14 +822,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/javafx.graphics/javafx/stage/Stage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6675">
-          <caret line="267" column="0" lean-forward="false" selection-start-line="267" selection-start-column="0" selection-end-line="267" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/javafx.graphics/javafx/stage/Stage.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/views/create_new_form.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -726,7 +839,8 @@
         <state relative-caret-position="575">
           <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <marker date="1515723101765" expanded="true" signature="1568:1624" ph="UPDATE form " />
+            <marker date="1515723101765" expanded="true" signature="2006:2113" ph="INSERT INTO form... " />
           </folding>
         </state>
       </provider>
@@ -736,7 +850,8 @@
         <state relative-caret-position="475">
           <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <marker date="1515725464605" expanded="true" signature="1276:1327" ph="UPDATE form " />
           </folding>
         </state>
       </provider>
@@ -757,7 +872,7 @@
         <state relative-caret-position="475">
           <caret line="29" column="6" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="44" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <marker date="1515711349397" expanded="true" signature="1135:1186" ph="SELECT * FRO... User" />
           </folding>
         </state>
       </provider>
@@ -766,7 +881,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="21" column="154" lean-forward="true" selection-start-line="21" selection-start-column="154" selection-end-line="21" selection-end-column="154" />
-          <folding />
+          <folding>
+            <marker date="1515722402913" expanded="true" signature="3631:3650" ph="..." />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
@@ -786,7 +903,7 @@
         <state relative-caret-position="850">
           <caret line="34" column="7" lean-forward="false" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
           <folding>
-            <marker date="1515264823750" expanded="true" signature="1978:2013" ph="SELECT * FRO... form" />
+            <marker date="1515725464584" expanded="true" signature="2008:2043" ph="SELECT * FRO... form" />
           </folding>
         </state>
       </provider>
@@ -815,7 +932,8 @@
         <state relative-caret-position="175">
           <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <marker date="1515723101765" expanded="true" signature="1568:1624" ph="UPDATE form " />
+            <marker date="1515723101765" expanded="true" signature="2006:2113" ph="INSERT INTO form... " />
           </folding>
         </state>
       </provider>
@@ -836,7 +954,7 @@
         <state relative-caret-position="1225">
           <caret line="49" column="17" lean-forward="true" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <marker date="1515711349397" expanded="true" signature="1135:1186" ph="SELECT * FRO... User" />
           </folding>
         </state>
       </provider>
@@ -855,7 +973,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
           <caret line="27" column="108" lean-forward="false" selection-start-line="27" selection-start-column="108" selection-end-line="27" selection-end-column="108" />
-          <folding />
+          <folding>
+            <marker date="1515722402913" expanded="true" signature="3631:3650" ph="..." />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
@@ -867,7 +987,7 @@
         <state relative-caret-position="175">
           <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
           <folding>
-            <marker date="1515264823750" expanded="true" signature="1978:2013" ph="SELECT * FRO... form" />
+            <marker date="1515725464584" expanded="true" signature="2008:2043" ph="SELECT * FRO... form" />
           </folding>
         </state>
       </provider>
@@ -902,22 +1022,119 @@
         <state relative-caret-position="100">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <marker date="1515711349397" expanded="true" signature="1135:1186" ph="SELECT * FRO... User" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="3321" column="0" lean-forward="false" selection-start-line="3321" selection-start-column="0" selection-end-line="3321" selection-end-column="0" />
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/lang/Class.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/javafx.graphics/javafx/stage/Stage.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java" />
+    <entry file="file://$PROJECT_DIR$/UML/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Models/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="67" column="19" lean-forward="true" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/views/insurance_nr.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="26" column="39" lean-forward="true" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://F:/Programowanie/Java/jdk1.8.0_121/src.zip!/java/sql/PreparedStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="76" column="14" lean-forward="false" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/views/sign_up.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="106" lean-forward="false" selection-start-line="22" selection-start-column="106" selection-end-line="22" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/views/login.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        <state relative-caret-position="207">
+          <caret line="34" column="120" lean-forward="true" selection-start-line="34" selection-start-column="120" selection-end-line="34" selection-end-column="120" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1911">
+          <caret line="101" column="46" lean-forward="false" selection-start-line="101" selection-start-column="46" selection-end-line="101" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/controllers/InsuranceNrController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="31" column="50" lean-forward="false" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#519#520#0" expanded="true" />
+            <element signature="e#551#552#0" expanded="true" />
+            <element signature="e#1250#1251#0" expanded="true" />
+            <element signature="e#1285#1286#0" expanded="true" />
+            <marker date="1515721878396" expanded="true" signature="829:867" ph="SELECT * FRO... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/controllers/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+          <folding>
+            <marker date="1515711349397" expanded="true" signature="1135:1186" ph="SELECT * FRO... User" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Models/FormModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-168">
+          <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/views/create_new_form.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="37" column="30" lean-forward="false" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
@@ -926,111 +1143,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/controllers/RegisterController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="64" column="32" lean-forward="false" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/DatabaseHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        <state relative-caret-position="1302">
+          <caret line="70" column="39" lean-forward="false" selection-start-line="70" selection-start-column="39" selection-end-line="70" selection-end-column="39" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <marker date="1515717072550" expanded="true" signature="1686:1840" ph="INSERT INTO User... " />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/javafx.graphics/javafx/stage/Stage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="267" column="0" lean-forward="false" selection-start-line="267" selection-start-column="0" selection-end-line="267" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/views/sign_up.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="34" lean-forward="false" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/views/main_form.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="146" lean-forward="false" selection-start-line="31" selection-start-column="146" selection-end-line="31" selection-end-column="146" />
-          <folding />
+        <state relative-caret-position="1071">
+          <caret line="51" column="38" lean-forward="false" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
+          <folding>
+            <marker date="1515722402913" expanded="true" signature="3631:3650" ph="..." />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/views/create_new_form.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="1781" column="0" lean-forward="false" selection-start-line="1781" selection-start-column="0" selection-end-line="1781" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Models/FormModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/controllers/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="29" column="6" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="44" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/controllers/CreateNewFormController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="65" column="24" lean-forward="false" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/controllers/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1496">
-          <caret line="115" column="35" lean-forward="false" selection-start-line="115" selection-start-column="35" selection-end-line="115" selection-end-column="35" />
+        <state relative-caret-position="2310">
+          <caret line="137" column="56" lean-forward="false" selection-start-line="137" selection-start-column="56" selection-end-line="137" selection-end-column="56" />
           <folding>
-            <marker date="1515264823750" expanded="true" signature="1978:2013" ph="SELECT * FRO... form" />
+            <marker date="1515725464584" expanded="true" signature="2008:2043" ph="SELECT * FRO... form" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/views/main_admin_form.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="504">
+          <caret line="24" column="136" lean-forward="false" selection-start-line="24" selection-start-column="136" selection-end-line="24" selection-end-column="136" />
           <folding />
         </state>
       </provider>
@@ -1038,32 +1185,38 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UML/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/DatabaseHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="1008">
+          <caret line="56" column="31" lean-forward="false" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1515725464605" expanded="true" signature="1276:1327" ph="UPDATE form " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/controllers/MainAdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        <state relative-caret-position="882">
+          <caret line="62" column="26" lean-forward="false" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
           <folding>
-            <marker date="1515265639319" expanded="true" signature="2395:2429" ph="SELECT * FRO... User" />
-            <marker date="1515265639319" expanded="true" signature="2829:2864" ph="SELECT * FRO... form" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1867#1868#0" expanded="true" />
+            <element signature="e#1919#1920#0" expanded="true" />
+            <marker date="1515725638853" expanded="true" signature="2285:2319" ph="SELECT * FRO... User" />
+            <marker date="1515725638853" expanded="true" signature="2855:2890" ph="SELECT * FRO... form" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/controllers/CreateNewFormController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="74" column="63" lean-forward="false" selection-start-line="74" selection-start-column="63" selection-end-line="75" selection-end-column="87" />
+          <folding>
+            <marker date="1515723101765" expanded="true" signature="1568:1624" ph="UPDATE form " />
+            <marker date="1515723101765" expanded="true" signature="2006:2113" ph="INSERT INTO form... " />
           </folding>
         </state>
       </provider>
@@ -1079,7 +1232,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1110,7 +1262,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>9.0</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1127,6 +1279,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

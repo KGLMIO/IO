@@ -14,7 +14,7 @@ public class DatabaseHelper {
 
     private static final String DATABASE_PATH="jdbc:sqlite:@../../assets/database.sqlite";
 
-    private static Connection instance ;
+    private static Connection instance;
 
 
     public static Connection connectToDatabase() throws SQLException {
@@ -31,7 +31,7 @@ public class DatabaseHelper {
     }
 
     public static Connection getConnection() throws SQLException {
-        if (instance==null)
+        if (instance==null) //singleton
            instance= connectToDatabase();
 
         return instance;
@@ -49,10 +49,11 @@ public class DatabaseHelper {
         try {
             connection= DatabaseHelper.getConnection();
 
-            ps = connection.prepareStatement("UPDATE form SET status = ? WHERE id = ? ");
+            ps = connection.prepareStatement("UPDATE form SET status = ?, amount = ? WHERE id = ? ");
 
             ps.setString(1, formModel.getStatus());
-            ps.setInt(2, formModel.getId());
+            ps.setInt(2, formModel.getAmount());
+            ps.setInt(3, formModel.getId());
             ps.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();

@@ -31,13 +31,14 @@ public class MainController  {
     public Label nazwaLabel;
     public Label opisLabel;
     public Label helloLabel;
+    public Label kwotaLabel;
 
     private User user;
     private FormModel currentModel;
     private ObservableList<FormModel> form_list;
 
     public void GoToCreateNewFormButton(ActionEvent actionEvent) {
-        Main.goToCreateForm(user);
+        Main.goToInsuranceNr(user);
     }
 
     public void GoToLoginScene(ActionEvent actionEvent) {
@@ -80,7 +81,7 @@ public class MainController  {
             while(rs.next()){
 
                 FormModel formModel = new FormModel(rs.getString("name"),rs.getString("description"),
-                        rs.getString("status"),rs.getInt("id"), rs.getInt("userID"));
+                        rs.getString("status"),rs.getInt("id"), rs.getInt("userID"), rs.getInt("amount"));
 
                 form_list.add(formModel);
             }
@@ -136,6 +137,7 @@ public class MainController  {
         statusLabel.setText(currentModel.getStatus());
         opisLabel.setText(currentModel.getDescripton());
         nazwaLabel.setText(currentModel.getName());
+        kwotaLabel.setText(Integer.toString(currentModel.getAmount()));
     }
 
     public void modifyForm(ActionEvent actionEvent) {

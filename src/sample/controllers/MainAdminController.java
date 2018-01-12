@@ -5,10 +5,7 @@ import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.ListCell;
-import javafx.scene.control.ListView;
+import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import sample.DatabaseHelper;
@@ -38,6 +35,11 @@ public class MainAdminController {
     public Label loginLabel;
     public Label hasloLabel;
     public Label helloLabel;
+    public Label adresLabel;
+    public Label dataUrodzeniaLabel;
+    public Label peselLabel;
+    public TextField detriment_cost;
+    public Label amountLabel;
 
     private FormModel currentModel;
     private ObservableList<FormModel> form_list;
@@ -54,14 +56,11 @@ public class MainAdminController {
 
         currentModel.setStatus(status_combo_box.getSelectionModel().getSelectedItem().toString());
 
-        if(currentModel==null || currentModel.getStatus().equals(PRZETWARZANIE.toString()))
+        if(currentModel==null )
             return;
 
-
-        System.out.println(status_combo_box.getSelectionModel().getSelectedItem().toString());
         DatabaseHelper.updateFormStatus(currentModel);
-     //   updateList();
-
+        hideDescription();
     }
 
 
@@ -88,7 +87,9 @@ public class MainAdminController {
             while(rs.next()){
 
                 User user = new User(rs.getString("name"),rs.getString("surname"),
-                        rs.getString("login"),rs.getString("password"), rs.getInt("id"), rs.getBoolean("admin"));
+                        rs.getString("login"),rs.getString("password"), rs.getInt("id"),
+                        rs.getBoolean("admin"), rs.getInt("pesel"), rs.getString("data_urodzenia"),
+                        rs.getString("adres_zamieszkania"));
 
                 users.add(user);
             }
@@ -101,7 +102,7 @@ public class MainAdminController {
             while(rs.next()){
 
                 FormModel formModel = new FormModel(rs.getString("name"),rs.getString("description"),
-                        rs.getString("status"),rs.getInt("id"), rs.getInt("userID"));
+                        rs.getString("status"),rs.getInt("id"), rs.getInt("userID"), rs.getInt("amount"));
 
                 for(User u : users){
                     if(u.getId()== formModel.getUserID()){
@@ -166,12 +167,17 @@ public class MainAdminController {
         nazwiskoLabel.setText(currentModel.getUser().getSurname());
         loginLabel.setText(currentModel.getUser().getLogin());
         hasloLabel.setText(currentModel.getUser().getPassword());
+        adresLabel.setText(currentModel.getUser().getAdres());
+        dataUrodzeniaLabel.setText(currentModel.getUser().getData_ur());
+        peselLabel.setText(Integer.toString(currentModel.getUser().getPesel()));
+        amountLabel.setText(Integer.toString(currentModel.getAmount()));
 
     }
 
     private void initComboBox() {
 
        status_combo_box.getItems().clear();
+
             status_combo_box.getItems().addAll(
                     PRZETWARZANIE.toString(),
                     AKCEPTACJA.toString(),

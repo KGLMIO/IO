@@ -2,17 +2,20 @@ package sample.Models;
 
 public class User {
 
-    private String name,surname,login,password;
-private boolean admin;
-    private int id;
+    private String name,surname,login,password, data_ur, adres;
+    private boolean admin;
+    private int id, pesel;
 
-    public User(String name, String surname, String login, String password,int id,boolean admin) {
+    public User(String name, String surname, String login, String password,int id,boolean admin, int pesel, String data_ur, String adres) {
         this.name = name;
         this.surname = surname;
         this.login = login;
         this.password = password;
         this.id=id;
         this.admin=admin;
+        this.pesel=pesel;
+        this.data_ur=data_ur;
+        this.adres=adres;
     }
 
     public String getName() {
@@ -55,6 +58,11 @@ private boolean admin;
         this.id = id;
     }
 
+    public String getData_ur() { return data_ur; }
+
+    public String getAdres() { return adres; }
+
+    public int getPesel() { return pesel; }
 
     public boolean isAdmin() {
         return admin;

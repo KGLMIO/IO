@@ -8,17 +8,19 @@ import javafx.stage.Stage;
 import sample.Models.FormModel;
 import sample.Models.User;
 import sample.controllers.CreateNewFormController;
+import sample.controllers.InsuranceNrController;
 import sample.controllers.MainAdminController;
 import sample.controllers.MainController;
 
 public class Main extends Application {
 
 
-  private static Scene loginScene,registerScene,mainScene,createFormScene,mainAdminScene;
+  private static Scene loginScene,registerScene,mainScene,createFormScene,mainAdminScene, insuranceNrScene;
 
   private static MainController mainController;
 private static MainAdminController mainAdminController;
   private static CreateNewFormController createNewFormController;
+  private static InsuranceNrController insuranceNrController;
 
 
   private static Stage primaryStage;
@@ -47,6 +49,11 @@ private static MainAdminController mainAdminController;
         Parent create_form_layout = loaderCreateFormLoader.load();
         createNewFormController = loaderCreateFormLoader.getController();
         createFormScene = new Scene(create_form_layout,600,600);
+
+        FXMLLoader loaderInsuranceNr = new FXMLLoader(getClass().getResource("views/insurance_nr.fxml"));
+        Parent insurance_nr = loaderInsuranceNr.load();
+        insuranceNrController = loaderInsuranceNr.getController();
+        insuranceNrScene = new Scene(insurance_nr,600,600);
 
         goToLogin();
     }
@@ -86,6 +93,13 @@ private static MainAdminController mainAdminController;
         createNewFormController.setUser(user);
         primaryStage.setTitle("Utwórz szkode");
         primaryStage.setScene(createFormScene);
+        primaryStage.show();
+    }
+
+    public static void goToInsuranceNr(User user) {
+        insuranceNrController.setUser(user);
+        primaryStage.setTitle("Podaj numer polisy");
+        primaryStage.setScene(insuranceNrScene);
         primaryStage.show();
     }
 

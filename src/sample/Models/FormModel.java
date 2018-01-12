@@ -3,16 +3,19 @@ package sample.Models;
 public class FormModel {
 
 private String name,descripton,status;
-private int id,userID;
+private int id,userID, amount;
 
 private User user;
 
-    public FormModel(String name, String descripton, String status, int id, int userID) {
+
+    public FormModel(String name, String descripton, String status, int id, int userID, int amount) {
         this.name = name;
         this.descripton = descripton;
         this.status = status;
         this.id = id;
         this.userID = userID;
+        this.amount = amount;
+
     }
 
     public String getName() {
@@ -62,6 +65,8 @@ private User user;
     public void setUser(User user) {
         this.user = user;
     }
+
+    public int getAmount() { return amount; }
 }
 
 
