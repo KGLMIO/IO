@@ -67,6 +67,10 @@ private User user;
     }
 
     public int getAmount() { return amount; }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
 }
 
 

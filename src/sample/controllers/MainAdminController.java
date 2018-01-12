@@ -55,7 +55,7 @@ public class MainAdminController {
     public void AcceptChanges(ActionEvent actionEvent) {
 
         currentModel.setStatus(status_combo_box.getSelectionModel().getSelectedItem().toString());
-
+        currentModel.setAmount(Integer.parseInt(detriment_cost.getText()));
         if(currentModel==null )
             return;
 
